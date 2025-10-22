@@ -1,0 +1,752 @@
+/* Sixth/Final index css */
+/* Use of vw or % for the majority of size for responsive webpage*/ 
+
+/* General body styling */ 
+body {
+  margin: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+/* Navbar container styling */
+.navbar {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  background-color: #00ffff; 
+  padding: 0.8vw;
+  position: absolute;
+  top: 1vw; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  width: 70%; 
+  z-index: 39; 
+  border-radius: 2vw; 
+  outline: 0.5vw solid #f3008d;
+  outline-offset: 0.2vw; 
+}
+
+/* Left side of navbar */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+/* Navbar logo */
+.nav-logo {
+  height: auto;
+  width: 7vw; 
+}
+
+/* Navlist container */
+.navbar-right ul {
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+  display: flex; 
+}
+
+/* Space between Nav itens */
+.navbar-right li {
+  margin-left: 3vw;
+}
+
+/* Nav links */
+.navbar-right a {
+  text-decoration: none; 
+  color: black;
+  font-weight: bold;
+  font-size: 1.2vw;
+  transition: color 0.3s ease; 
+}
+
+/* Hover effect for navbar links */
+.navbar-right a:hover {
+  color: #f0f0f0;
+}
+
+/* Homepage section background */
+.hp-b {
+  height: 100vh; 
+  width: 100%;
+  background-image: url("../image/hp-bg3.png"); /* Background image */
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Container for main content */
+.hp-center-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+/* Miku image */
+.hp-centre-miku {
+  width: 30vw;
+  height: auto;
+  z-index: 1;
+  padding-left: 1.5%;
+}
+
+/* Centre Logo */
+.hp-logo-text {
+  width: 20vw;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 5vw;
+  z-index: 39;
+}
+
+/* Circle container style */
+.hp-circle {
+  position: absolute;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Circle image style */
+.hp-circle img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Circle positions and animations */
+.circle-top-left {
+  top: 15%;
+  left: 10%;
+  animation: circle1 12s infinite alternate ease-in-out;
+}
+
+.circle-top-right {
+  top: 15%;
+  right: 10%;
+  animation: circle2 11s infinite alternate ease-in-out;
+}
+
+.circle-bottom-left {
+  bottom: 15%;
+  left: 10%;
+  animation: circle3 13s infinite alternate ease-in-out;
+}
+
+.circle-bottom-right {
+  bottom: 15%;
+  right: 10%;
+  animation: circle4 10s infinite alternate ease-in-out;
+}
+
+/* Circle darkens when hovered */
+.hp-circle:hover {
+  filter: brightness(0.8);
+}
+
+/* Animation for top left circle */
+@keyframes circle1 {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(10px, 8px); }
+  50% { transform: translate(-5px, 15px); }
+  75% { transform: translate(12px, 2px); }
+  100% { transform: translate(0, 0); }
+}
+
+/* Animation for top right circle */
+@keyframes circle2 {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(-8px, -10px); }
+  50% { transform: translate(5px, -15px); }
+  75% { transform: translate(-10px, -5px); }
+  100% { transform: translate(0, 0); }
+}
+
+/* Animation for bottom left circle */
+@keyframes circle3 {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(-10px, 12px); }
+  50% { transform: translate(5px, 0); }
+  75% { transform: translate(-15px, -8px); }
+  100% { transform: translate(0, 0); }
+}
+
+/* Animation for bottom right circle */
+@keyframes circle4 {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(15px, -5px); }
+  50% { transform: translate(0, -10px); }
+  75% { transform: translate(-5px, 10px); }
+  100% { transform: translate(0, 0); }
+}
+
+/* "Who is" section background */
+.who-is-section {
+  width: 100%;
+  background-color: white;
+  padding: 50px 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+/* Content container for "Who is" section */
+.who-is-content {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  width: 90%;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Title and image */
+.who-is-heading {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Big title */
+.who-is-title {
+  font-size: 6vw;
+  color: black;
+  margin: 0;
+  line-height: 0.9;
+  text-align: center;
+  z-index: 39;
+}
+
+/* Miku image */
+.who-is-miku {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 22vw;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+/* Subtitle text */
+.who-is-subtitle {
+  font-size: 3vw;
+  color: #f3008d;
+  margin-top: 1vw;
+  text-align: center;
+  z-index: 39;
+}
+
+/* description */
+.who-is-paragraph {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Description paragraph */
+.who-is-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: black;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 600px) {
+  .hp-center-content {
+    flex-direction: column;
+    top: 0;
+    gap: 10px;
+  }
+
+  .hp-centre-miku {
+    width: 80%;
+    padding-left: 5vw;
+  }
+
+  .hp-logo-text {
+    width: 50%;
+  }
+
+  .hp-circle {
+    width: 30vw;
+    height: 30vw;
+  }
+
+
+  .who-is-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .who-is-left, .who-is-right {
+    width: 100%;
+  }
+  .who-is-title {
+    font-size: 11vw;
+  }
+  .who-is-subtitle {
+    font-size: 6vw;
+  }
+  .who-is-description {
+    font-size: 1rem;
+  } 
+  .navbar {
+  padding: 4vw;
+  top: 3vw;
+  z-index: 39;
+  border-radius: 2vw;
+  outline: 0.5vw solid #f3008d; 
+  outline-offset: 0.2vw; 
+  }
+
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-logo {
+    height: auto;
+    width: 10vw;
+  }
+
+  .navbar-right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .navbar-right li {
+    margin-left: 3vw;
+  }
+
+  .navbar-right a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 3vw;
+    transition: color 0.3s ease;
+  }
+  .who-is-miku {
+    width: 70vw;
+  }
+
+  .who-is-section {
+    min-height: 40vh;
+  }
+}
+
+/* Fourth/Final SnowMiku css */
+
+/* Snow section body styling */
+.snow-body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: #add8e6;
+}
+
+/* First / Main snow container */
+.snow-container1 {
+  height: 40vw;
+  width: auto;
+  margin-top: 9vw;
+  margin-bottom: 4vw;
+  max-width: fit-content;
+  margin-inline: auto; 
+}
+
+/* Second snow container */
+.snow-container2 {
+  height: 40vw;
+  width: auto;
+  margin-top: 4vw;
+  margin-bottom: 4vw;
+  max-width: fit-content;
+  margin-inline: auto;
+  position: relative;
+}
+
+/* Snow background image style */
+.snow-image {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  z-index: 38;
+}
+
+/* Snow video 1 style */
+.snow-video1 {
+  z-index: 39;
+  position: absolute;      
+  width: 23.4vw;
+  height: 12.75vw;
+  top: 59.52%; 
+  left: 2.1%;
+  border: 0.417vw solid #0a3673; 
+}
+
+/* Snow video 2 style */
+.snow-video2 {
+  z-index: 39;
+  position: absolute;      
+  width: 23.25vw;
+  height: 12.7vw;
+  top: 8.1%;
+  left: 58.8%;
+  border: 0.417vw solid #ffffff; 
+}
+
+/* Snow video 3 style */
+.snow-video3 {
+  z-index: 39;
+  position: absolute;      
+  width: 23.4vw;
+  height: 12.75vw;
+  top: 9.1%;
+  left: 2.63%;
+  border: 0.417vw solid #eac3ce; 
+}
+
+/* Snow video 4 style */
+.snow-video4 {
+  z-index: 39;
+  position: absolute;      
+  width: 23.4vw;
+  height: 12.75vw;
+  top: 59.28%;
+  left: 58.5%;
+  border: 0.417vw solid #3d4058; 
+}
+
+/* Snow video 5 style */
+.snow-video5 {
+  z-index: 39;
+  position: absolute;      
+  width: 23.4vw;
+  height: 12.75vw;
+  top: 9.1%;
+  left: 2.63%;
+  border: 0.417vw solid #799bc2; 
+}
+
+/* Snow video 6 style */
+.snow-video6 {
+  z-index: 39;
+  position: absolute;      
+  width: 23.4vw;
+  height: 12.75vw;
+  top: 59.28%;
+  left: 59.4%;
+  border: 0.417vw solid #4b73b6; 
+}
+
+/* Mobile responsive adjustments for snow section */
+@media (max-width: 600px) {
+  .snow-container1 {
+    margin-top: 20vw;
+    height: 60vw;
+  }
+
+  .snow-container2 {
+    height: 60vw;
+  }
+
+  /* Resize videos proportionally for mobile */
+  .snow-video1,
+  .snow-video2,
+  .snow-video3,
+  .snow-video4,
+  .snow-video5,
+  .snow-video6 {
+    width: 35vw; 
+    height: 19vw; 
+    border-width: 0.6vw;
+  }
+}
+
+/* Third/Final MikuMirai css */
+
+/* Mirai section body style */
+.miraibody {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: #0e0e0f;
+}
+
+/* First / Main Mirai container */
+.mirai-container1 {
+  height: 40vw;
+  width: auto;
+  margin-top: 9vw;
+  margin-bottom: 4vw;
+  max-width: fit-content;
+  margin-inline: auto;
+}
+
+/* Second Mirai container */
+.mirai-container2 {
+  height: 40vw;
+  width: auto;
+  margin-top: 4vw;
+  margin-bottom: 4vw;
+  max-width: fit-content;
+  margin-inline: auto;
+  position: relative;
+  text-align: center;
+}
+
+/* Mirai background image styling */
+.mirai-image {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  z-index: 38;
+}
+
+/* Mirai theme song link styling */
+.mirai-theme-song {
+  font-family: 'Yeseva One', serif;
+  font-size: 1.5vw;
+  color: #f2bdcc;
+  text-decoration: none;
+  position: absolute;
+  bottom: 4.5%; 
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 39;
+  text-decoration: underline;
+}
+
+/* Hover effect for theme song link */
+.mirai-theme-song:hover {
+  color: #aff2f0;
+}
+
+/* Mirai video 1 styling */
+.mirai-video1 {
+  z-index: 39;
+  position: absolute;      
+  width: 18vw;
+  height: 10.1vw;
+  bottom: 5.7%;
+  right: 2%;
+  border-radius: 1vw;
+}
+
+/* Mirai video 2 styling */
+.mirai-video2 {
+  z-index: 39;
+  position: absolute;      
+  width: 13.4vw;
+  height: 7.8vw;
+  bottom: 8%;
+  left: 2.8%;
+  border-radius: 1vw;
+}
+
+/* Mirai video 3 styling */
+.mirai-video3 {
+  z-index: 39;
+  position: absolute;      
+  width: 15vw;
+  height: 9vw;
+  bottom: 8%;
+  right: 10.5%;
+  border-radius: 1vw;
+}
+
+/* Mirai video 4 styling */
+.mirai-video4 {
+  z-index: 39;
+  position: absolute;      
+  width: 13.8vw;
+  height: 8vw;
+  bottom: 23.8%;
+  right: 2%;
+  border-radius: 1vw;
+}
+
+/* Mirai video 5 styling */
+.mirai-video5 {
+  z-index: 39;
+  position: absolute;      
+  width: 13.8vw;
+  height: 8vw;
+  top: 11%;
+  right: 1.1%;
+  border-radius: 1vw;
+}
+
+/* Mobile responsive adjustments for Mirai section */
+@media (max-width: 600px) {
+  .mirai-container1 {
+    margin-top: 20vw;
+    height: 60vw;
+  }
+
+  .mirai-container2{
+    height: 60vw;
+  }
+
+  .mirai-video1 {
+    width: 27vw;  
+    height: 15vw;
+  }
+
+  .mirai-video2 {
+    width: 20.2vw;
+    height: 11.7vw;
+  }
+
+  .mirai-video3 {
+    width: 22.5vw;
+    height: 13vw;
+  }
+
+  .mirai-video4 {
+    width: 21vw;
+    height: 12.2vw;
+  }
+
+  .mirai-video5 {
+    width: 20vw;
+    height: 12vw;
+  }
+}
+
+
+.racing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    background-image: url("../image/RM2025-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+
+.racing-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.racing-left-section {
+    flex: 0 0 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 4.5% 3% 0;
+    color: white;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 100%;
+}
+
+.racing-year {
+    display: flex;
+    align-items: center;
+    margin-bottom: -2%;
+    width: 100%;
+    justify-content: center;
+    gap: 1.5vw;
+}
+
+.racing-year-title {
+    font-family: "Racing Sans One";
+    font-size: 13vw;
+    color: white;
+    margin: 0;
+    line-height: 1;
+}
+
+.arrow-icon {
+    color: white;
+    font-size: 4vw;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.arrow-icon:hover {
+    color: #00ffff;
+}
+
+.racing-description-text {
+    font-size: 1.1vw;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0 5%;
+    max-width: 90%;
+    padding-bottom: 0;
+    margin-top: 1%;
+}
+
+.racing-hero-wrapper {
+    position: absolute;
+    bottom: -20%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    overflow: hidden;
+}
+
+.racing-hero-image {
+    width: 40vw;
+    height: auto;
+    display: block;
+}
+
+.racing-right-section {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative; 
+    overflow: hidden; 
+}
+
+.racing-image{
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,357 @@
+/* Sixth/Final index css */
+/* Use of vw or % for the majority of size for responsive webpage*/ 
+
+/* General body styling */ 
+body {
+  margin: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+/* Navbar container styling */
+.navbar {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  background-color: #00ffff; 
+  padding: 0.8vw;
+  position: absolute;
+  top: 1vw; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  width: 70%; 
+  z-index: 39; 
+  border-radius: 2vw; 
+  outline: 0.5vw solid #f3008d;
+  outline-offset: 0.2vw; 
+}
+
+/* Left side of navbar */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+/* Navbar logo */
+.nav-logo {
+  height: auto;
+  width: 7vw; 
+}
+
+/* Navlist container */
+.navbar-right ul {
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+  display: flex; 
+}
+
+/* Space between Nav itens */
+.navbar-right li {
+  margin-left: 3vw;
+}
+
+/* Nav links */
+.navbar-right a {
+  text-decoration: none; 
+  color: black;
+  font-weight: bold;
+  font-size: 1.2vw;
+  transition: color 0.3s ease; 
+}
+
+/* Hover effect for navbar links */
+.navbar-right a:hover {
+  color: #f0f0f0;
+}
+
+/* Homepage section background */
+.hp-b {
+  height: 100vh; 
+  width: 100%;
+  background-image: url("../image/hp-bg3.png"); /* Background image */
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Container for main content */
+.hp-center-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+/* Miku image */
+.hp-centre-miku {
+  width: 30vw;
+  height: auto;
+  z-index: 1;
+  padding-left: 1.5%;
+}
+
+/* Centre Logo */
+.hp-logo-text {
+  width: 20vw;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 5vw;
+  z-index: 39;
+}
+
+/* Circle container style */
+.hp-circle {
+  position: absolute;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Circle image style */
+.hp-circle img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Circle positions and animations */
+.circle-top-left {
+  top: 15%;
+  left: 10%;
+  animation: circle1 12s infinite alternate ease-in-out;
+}
+
+.circle-top-right {
+  top: 15%;
+  right: 10%;
+  animation: circle2 11s infinite alternate ease-in-out;
+}
+
+.circle-bottom-left {
+  bottom: 15%;
+  left: 10%;
+  animation: circle3 13s infinite alternate ease-in-out;
+}
+
+.circle-bottom-right {
+  bottom: 15%;
+  right: 10%;
+  animation: circle4 10s infinite alternate ease-in-out;
+}
+
+/* Circle darkens when hovered */
+.hp-circle:hover {
+  filter: brightness(0.8);
+}
+
+/* Animation for top left circle */
+@keyframes circle1 {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(10px, 8px); }
+  50% { transform: translate(-5px, 15px); }
+  75% { transform: translate(12px, 2px); }
+  100% { transform: translate(0, 0); }
+}
+
+/* Animation for top right circle */
+@keyframes circle2 {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(-8px, -10px); }
+  50% { transform: translate(5px, -15px); }
+  75% { transform: translate(-10px, -5px); }
+  100% { transform: translate(0, 0); }
+}
+
+/* Animation for bottom left circle */
+@keyframes circle3 {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(-10px, 12px); }
+  50% { transform: translate(5px, 0); }
+  75% { transform: translate(-15px, -8px); }
+  100% { transform: translate(0, 0); }
+}
+
+/* Animation for bottom right circle */
+@keyframes circle4 {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(15px, -5px); }
+  50% { transform: translate(0, -10px); }
+  75% { transform: translate(-5px, 10px); }
+  100% { transform: translate(0, 0); }
+}
+
+/* "Who is" section background */
+.who-is-section {
+  width: 100%;
+  background-color: white;
+  padding: 50px 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+/* Content container for "Who is" section */
+.who-is-content {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  width: 90%;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Title and image */
+.who-is-heading {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Big title */
+.who-is-title {
+  font-size: 6vw;
+  color: black;
+  margin: 0;
+  line-height: 0.9;
+  text-align: center;
+  z-index: 39;
+}
+
+/* Miku image */
+.who-is-miku {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 22vw;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+/* Subtitle text */
+.who-is-subtitle {
+  font-size: 3vw;
+  color: #f3008d;
+  margin-top: 1vw;
+  text-align: center;
+  z-index: 39;
+}
+
+/* description */
+.who-is-paragraph {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Description paragraph */
+.who-is-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: black;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 600px) {
+  .hp-center-content {
+    flex-direction: column;
+    top: 0;
+    gap: 10px;
+  }
+
+  .hp-centre-miku {
+    width: 80%;
+    padding-left: 5vw;
+  }
+
+  .hp-logo-text {
+    width: 50%;
+  }
+
+  .hp-circle {
+    width: 30vw;
+    height: 30vw;
+  }
+
+
+  .who-is-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .who-is-left, .who-is-right {
+    width: 100%;
+  }
+  .who-is-title {
+    font-size: 11vw;
+  }
+  .who-is-subtitle {
+    font-size: 6vw;
+  }
+  .who-is-description {
+    font-size: 1rem;
+  } 
+  .navbar {
+  padding: 4vw;
+  top: 3vw;
+  z-index: 39;
+  border-radius: 2vw;
+  outline: 0.5vw solid #f3008d; 
+  outline-offset: 0.2vw; 
+  }
+
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-logo {
+    height: auto;
+    width: 10vw;
+  }
+
+  .navbar-right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .navbar-right li {
+    margin-left: 3vw;
+  }
+
+  .navbar-right a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 3vw;
+    transition: color 0.3s ease;
+  }
+  .who-is-miku {
+    width: 70vw;
+  }
+
+  .who-is-section {
+    min-height: 40vh;
+  }
+}
