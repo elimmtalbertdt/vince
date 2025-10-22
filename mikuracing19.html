@@ -1,0 +1,120 @@
+<!-- Sixth Itteration of my RacingMiku 
+     - For my Sixth Itteration of my Racing Miku I have added comments to my HTML CSS and JS.
+     - I now need to make this page for all the other years with their own unique images.
+     - Sixth itteration is also final itteration. mikuracing6.html = mikuracing(insert year).html
+-->
+<!DOCTYPE html>
+<!--
+Basic HTML document setup for the Racing Miku page as well as link to css.
+-->
+<html lang="en">
+  <head>
+    <title>Hatsune Miku Racing</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles19.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+  </head>
+  <!--
+  Content of the Racing Miku webpage
+  -->
+  <body class="racing-body">
+    <!--
+    Navgation Bar
+    -->
+    <header class="navbar">
+      <!--Logo-->
+      <div class="navbar-left">
+        <a href="index.html">
+          <img src="image/logo.png" class="nav-logo" />
+        </a>
+      </div>
+      <!--Links to the other webpages-->
+      <nav class="navbar-right">
+        <ul>
+          <li><a href="mikusymphony.html">SYMPHONY</a></li>
+          <li><a href="mikumirai.html">MIRAI</a></li>
+          <li><a href="mikuracing19.html">RACING</a></li>
+          <li><a href="mikusnow.html">SNOW</a></li>
+        </ul> 
+      </nav>
+    </header>
+<!-- Main content area -->
+    <main>
+        <!-- Container for main image for Racing Miku-->
+        <div class="racing-container1">
+            <img src="image/RMmain-bg.png" class="racing-image">
+        </div>
+
+        <!-- Contaienr for info on Racing Miku -->
+        <div class="racing-container2">
+            <img src="image/RMinfo-bg.png" class="racing-image"> 
+        </div>
+
+        <!-- Container containing main racing content -->
+        <div class="racing-page" id="bottom">
+            <div class="racing-container">
+
+                <!-- Left section: year selector, description, and hero image -->
+                <div class="racing-left-section">
+                    <!-- Year selector with arrows -->
+                    <div class="racing-year">
+                        <a href="" class="arrow-icon">&lt;</a>
+                        <h1 class="racing-year-title">2025</h1>
+                        <a href="" class=" arrow-icon">&gt;</a>
+                    </div>
+
+                    <!-- Description text  -->
+                    <p class="racing-description-text">
+                        Good Smile Racing (GSR) continues its Hatsune Miku GT Project in 2025 with a new Racing Miku design by 
+                        illustrator Kei Mochizuki. This iteration will feature on their Mercedes-AMG GT3 Evo, competing in the 
+                        SUPER GT GT300 class. The current races held so far Round 1 Okayama: They qualified 1st and finished 4th in the finals.
+                        Round 2 Fuji: They qualified 12th and finished 9th in the finals. Round 3 Sepang: They qualified 8th and achieved coming in 3rd.
+                        This season is still ongoing...
+                    </p>
+
+                    <!-- Hero image wrapper -->
+                    <div class="racing-hero-wrapper">
+                        <img src="image/RM2025a-hero.png" class="racing-hero-image" />
+                    </div>
+                </div>
+
+                <!-- Right section: slideshow of racing images -->
+                <div class="racing-right-section">
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <img src="image/RM2025-img1.png">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="image/RM2025-img2.png">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="image/RM2025-img3.png">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="image/RM2025-img4.png">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="image/RM2025-img5.png">
+                        </div>
+                    </div>
+
+                    <!-- Navigation dots for slideshow -->
+                    <div class="dot-navigation">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Connection to external javascript file -->
+            <script src="js/script19.js"></script>
+        </div>
+    </main>
+</body>
+</html>

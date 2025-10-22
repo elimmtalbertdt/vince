@@ -1,0 +1,95 @@
+<!-- Fourth Itteration of my RacingMiku 
+     - For my Fourth Itteration of my Racing Miku before I made comments and 
+     made all the other years (2024-2020) I saw my other pages and had a thought that I
+     should make this page also similar to the other ones. This also was in my design plan
+     to include a starting section and info but I forgot to implement it.
+     So now changing it I need to make the previous elements that took up the whole page 
+     fit inside a box. Also need to add two others boxes and make it so when you switch
+     years the page should load to the year section and not back on top. also need to change
+     it so that it looks nice on a phone.
+     - In this itteration I added everything but the phone screen size and the loading to
+     a specific part of the page.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hatsune Miku Racing</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles17.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+</head>
+<body class="racing-body">
+    <header class="navbar">
+        <div class="navbar-left">
+            <a href="index.html">
+                <img src="image/logo.png" class="nav-logo" />
+            </a>
+        </div>
+        <nav class="navbar-right">
+            <ul>
+                <li><a href="mikusymphony.html">SYMPHONY</a></li>
+                <li><a href="mikumirai.html">MIRAI</a></li>
+                <li><a href="mikuracing17.html">RACING</a></li>
+                <li><a href="mikusnow.html">SNOW</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="racing-container1">
+            <img src="image/RMmain-bg.png" class="racing-image">
+        </div>
+        <div class="racing-container1">
+            <img src="image/RMinfo-bg.png" class="racing-image"> 
+        </div>
+        <div class="racing-page">
+            <div class="racing-container">
+                <div class="racing-left-section">
+                    <div class="racing-year">
+                        <a href="" class="arrow-icon">&lt;</a>
+                        <h1 class="racing-year-title">2025</h1>
+                        <a href="" class=" arrow-icon">&gt;</a>
+                    </div>
+                    <p class="racing-description-text">
+                        Good Smile Racing (GSR) continues its Hatsune Miku GT Project in 2025 with a new Racing Miku design by 
+                        illustrator Kei Mochizuki. This iteration will feature on their Mercedes-AMG GT3 Evo, competing in the 
+                        SUPER GT GT300 class. The current races held so far Round 1 Okayama: They qualified 1st and finished 4th in the finals.
+                        Round 2 Fuji: They qualified 12th and finished 9th in the finals. Round 3 Sepang: They qualified 8th and achieved coming in 3rd.
+                        This season is still ongoing...
+                    </p>
+                    <div class="racing-hero-wrapper">
+                        <img src="image/RM2025a-hero.png" class="racing-hero-image" />
+                    </div>
+                </div>
+                <div class="racing-right-section">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <img src="image/RM2025-img1.png">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="image/RM2025-img2.png">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="image/RM2025-img3.png">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="image/RM2025-img4.png">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="image/RM2025-img5.png">
+                        </div>
+                    </div>
+                    <div class="dot-navigation">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                    </div>
+                </div>
+            </div>
+            <script src="js/script17.js"></script>
+        </div>
+    </main>
+</body>
+</html>

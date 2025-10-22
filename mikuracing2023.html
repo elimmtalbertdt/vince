@@ -1,0 +1,103 @@
+<!-- Final Itteration of my RacingMiku page-->
+<!DOCTYPE html>
+<!--
+Basic HTML document setup for the Racing Miku page as well as link to css.
+-->
+<html lang="en">
+<head>
+    <title>Hatsune Miku Racing</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+</head>
+<!--
+Content of the Racing Miku webpage
+-->
+<body class="racing-body">
+    <!--
+    Navgation Bar
+    -->
+    <header class="navbar">
+        <!--Logo-->
+        <div class="navbar-left">
+            <a href="index.html">
+                <img src="image/logo.png" alt="Hatsune Miku logo" class="nav-logo" />
+            </a>
+        </div>
+        <!--Links to the other webpages-->
+        <nav class="navbar-right">
+            <ul>
+                <li><a href="mikusymphony.html">SYMPHONY</a></li>
+                <li><a href="mikumirai.html">MIRAI</a></li>
+                <li><a href="mikuracing.html">RACING</a></li>
+                <li><a href="mikusnow.html">SNOW</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main content area -->
+    <main>
+        <!-- Container for main image for Racing Miku-->
+        <div class="racing-container1">
+            <img src="image/RMmain-bg.png" alt="Racing Miku main background" class="racing-image">
+        </div>
+        <!-- Contaienr for info on Racing Miku -->
+        <div class="racing-container2">
+            <img src="image/RMinfo-bg.png" alt="Racing Miku information background" class="racing-image"> 
+        </div>
+        <!-- Container containing main racing content -->
+        <div class="racing-page3" id="bottom">
+            <div class="racing-container">
+                <!-- Left section: year selector, description, and hero image -->
+                <div class="racing-left-section">
+                    <!-- Year selector with arrows -->
+                    <div class="racing-year">
+                        <a href="mikuracing2024.html" class="arrow-icon" aria-label="Go to 2024 Racing Miku">&lt;</a>
+                        <h1 class="racing-year-title">2023</h1>
+                        <a href="mikuracing2022.html" class=" arrow-icon" aria-label="Go to 2022 Racing Miku">&gt;</a>
+                    </div>
+                    <!-- Description text  -->
+                    <p class="racing-description-text">
+                        Good Smile Racing's (GSR) 2023 season with their Mercedes-AMG GT3 featured a Racing Miku design by Toridamono. A highlight was securing pole position at Round 4 Fuji, demonstrating their qualifying prowess. However, converting this into consistent race finishes proved challenging. The team concluded the season with 3 points, placing them 19th in the driver standings. Despite flashes of speed, overall race results didn't reflect their qualifying potential.
+                    </p>
+                    <!-- Hero image wrapper -->
+                    <div class="racing-hero-wrapper">
+                        <img src="image/RM2023a-hero.png" alt="2023 Racing Miku illustration" class="racing-hero-image" />
+                    </div>
+                </div>
+                <!-- Right section: slideshow of racing images -->
+                <div class="racing-right-section">
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <img src="image/RM2023-img1.png" alt="Racing Miku 2023 image 1">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="image/RM2023-img2.png" alt="Racing Miku 2023 image 2">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="image/RM2023-img3.png" alt="Racing Miku 2023 image 3">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="image/RM2023-img4.png" alt="Racing Miku 2023 image 4">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="image/RM2023-img5.png" alt="Racing Miku 2023 image 5">
+                        </div>
+                    </div>
+                    <!-- Navigation dots for slideshow -->
+                    <div class="dot-navigation">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Connection to external javascript file -->
+        <script src="js/script.js"></script>
+    </main>
+</body>
+</html>

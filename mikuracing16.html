@@ -1,0 +1,81 @@
+<!-- Third Itteration of my RacingMiku 
+     - For my Third Itteration of my Racing Miku I added the automatic image
+     changer as well as making it look nice on phone size (Iphone 14 pro max).
+     - Also added the text and am now ready to make the other years.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hatsune Miku Racing</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles16.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-left">
+            <a href="index.html">
+                <img src="image/logo.png" class="nav-logo" />
+            </a>
+        </div>
+        <nav class="navbar-right">
+            <ul>
+                <li><a href="mikusymphony.html">SYMPHONY</a></li>
+                <li><a href="mikumirai.html">MIRAI</a></li>
+                <li><a href="mikuracing16.html">RACING</a></li>
+                <li><a href="mikusnow.html">SNOW</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="racing-page">
+        <div class="racing-container">
+            <div class="racing-left-section">
+                <div class="racing-year">
+                    <a href="" class="arrow-icon">&lt;</a>
+                    <h1 class="racing-year-title">2025</h1>
+                    <a href="" class="arrow-icon">&gt;</a>
+                </div>
+                <p class="racing-description-text">
+                    Good Smile Racing (GSR) continues its Hatsune Miku GT Project in 2025 with a new Racing Miku design by 
+                    illustrator Kei Mochizuki. This iteration will feature on their Mercedes-AMG GT3 Evo, competing in the 
+                    SUPER GT GT300 class. The current races held so far Round 1 Okayama: They qualified 1st and finished 4th in the finals.
+                    Round 2 Fuji: They qualified 12th and finished 9th in the finals. Round 3 Sepang: They qualified 8th and achieved coming in 3rd.
+                    This season is still ongoing...</p>
+                <div class="racing-hero-wrapper">
+                    <img src="image/RM2025a-hero.png" class="racing-hero-image" />
+                </div>
+            </div>
+            <div class="racing-right-section">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="image/RM2025-img1.png">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="image/RM2025-img2.png">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="image/RM2025-img3.png">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="image/RM2025-img4.png">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="image/RM2025-img5.png">
+                    </div>
+                </div>
+                <div class="dot-navigation">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+            </div>
+        </div>
+        <script src="js/script16.js"></script>
+    </main>
+</body>
+</html>

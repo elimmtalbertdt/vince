@@ -1,0 +1,107 @@
+<!-- Final Itteration of my RacingMiku page-->
+<!DOCTYPE html>
+<!--
+Basic HTML document setup for the Racing Miku page as well as link to css.
+-->
+<html lang="en">
+<head>
+    <title>Hatsune Miku Racing</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+</head>
+<!--
+Content of the Racing Miku webpage
+-->
+<body class="racing-body">
+    <!--
+    Navgation Bar
+    -->
+    <header class="navbar">
+        <!--Logo-->
+        <div class="navbar-left">
+            <a href="index.html">
+                <img src="image/logo.png" alt="Hatsune Miku Logo" class="nav-logo"/>
+            </a>
+        </div>
+        <!--Links to the other webpages-->
+        <nav class="navbar-right">
+            <ul>
+                <li><a href="mikusymphony.html">SYMPHONY</a></li>
+                <li><a href="mikumirai.html">MIRAI</a></li>
+                <li><a href="mikuracing.html">RACING</a></li>
+                <li><a href="mikusnow.html">SNOW</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main content area -->
+    <main>
+        <!-- Container for main image for Racing Miku-->
+        <div class="racing-container1">
+            <img src="image/RMmain-bg.png" alt="Racing Miku main background" class="racing-image">
+        </div>
+        <!-- Container for info on Racing Miku -->
+        <div class="racing-container2">
+            <img src="image/RMinfo-bg.png" alt="Racing Miku information background" class="racing-image"> 
+        </div>
+        <!-- Container containing main racing content -->
+        <div class="racing-page0">
+            <div class="racing-container">
+
+                <!-- Left section: year selector, description, and hero image -->
+                <div class="racing-left-section">
+                    <!-- Year selector with arrows -->
+                    <div class="racing-year">
+                        <a href="mikuracing2021.html" class="arrow-icon">&lt;</a>
+                        <h1 class="racing-year-title">2020</h1>
+                        <a href="mikuracing2025.html" class=" arrow-icon">&gt;</a>
+                    </div>
+
+                    <!-- Description text  -->
+                    <p class="racing-description-text">
+                        The challenging 2020 season, impacted by global events, saw Good Smile Racing's Mercedes-AMG GT3 sport a new Racing Miku design by LEN[A-7]. The team secured their first podium of the year with a 3rd place finish at Round 6 Suzuka, a significant achievement in an unusual season. Despite the difficulties, they managed to accumulate 21 points, concluding the season in 10th place in the driver standings.
+                    </p>
+
+                    <!-- Hero image wrapper -->
+                    <div class="racing-hero-wrapper">
+                        <img src="image/RM2020a-hero.png" alt="Racing Miku 2020 illustration" class="racing-hero-image"/>
+                    </div>
+                </div>
+                <!-- Right section: slideshow of racing images -->
+                <div class="racing-right-section">
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <img src="image/RM2020-img1.png" alt="Racing Miku 2020 Image 1">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="image/RM2020-img2.png" alt="Racing Miku 2020 Image 2">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="image/RM2020-img3.png" alt="Racing Miku 2020 Image 3">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="image/RM2020-img4.png" alt="Racing Miku 2020 Image 4">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="image/RM2020-img5.png" alt="Racing Miku 2020 Image 5">
+                        </div>
+                    </div>
+                    <!-- Navigation dots for slideshow -->
+                    <div class="dot-navigation">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <!-- Connection to external javascript file -->
+    <script src="js/script.js"></script>
+</body>
+</html>
